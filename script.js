@@ -212,7 +212,7 @@ function retrieveJson(url, callback) {
  * @param {Function} cb - Called once for each API response.
  */
 function iterBuilds(repoName, maxRequests, cb) {
-	var buildsUrl = 'https://' + config.travis_api_endpoint + '/repos/' + repoName + '/builds?event_type=push';
+	var buildsUrl = 'https://' + config.travis_api_endpoint + '/repos/' + repoName + '/builds';
 
 	var i=0;
 
